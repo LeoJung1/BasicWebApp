@@ -20,7 +20,7 @@ public class QueryProcessor {
             String[] l = query.split(" plus ");
             String front = l[0];
             String back = l[1];
-            return (Integer.parseInt(front.valueOf(front.length() - 1)) + Integer.parseInt(back.valueOf(back.length() - 1))).toString();
+            return String.valueOf(Integer.parseInt(front.charAt(front.length() - 1)) + Integer.parseInt(back.charAt(back.length() - 1)));
         }
         return "";
     }
