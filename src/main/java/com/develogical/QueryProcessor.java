@@ -12,6 +12,10 @@ public class QueryProcessor {
         if (query.contains("we")){
             return "bear";
         }
+
+        if(query.contains("name")){
+            return "KSYJJHKKM-TEAM";
+        }
         return "";
     }
 }
