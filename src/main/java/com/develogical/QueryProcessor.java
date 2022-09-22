@@ -16,6 +16,12 @@ public class QueryProcessor {
         if(query.contains("name")){
             return "KSYJJHKKM-TEAM";
         }
+        if (query.contains("plus")){
+            String[] l = query.split(" plus ");
+            String front = l[0];
+            String back = l[1];
+            return (Integer.parseInt(front[front.length() - 1]) + Integer.parseInt(back[back.length() - 1])).toString();
+        }
         return "";
     }
 }
